@@ -1,8 +1,9 @@
 #dir_root{
   margin-top: 5%;
+  margin-bottom: 5%;
   display: grid;
   grid-template-rows: auto;
-  gap: 3%;
+  gap: 10px;
 }
 #item_btn{
   font-family: "Source Code Pro", monospace;
