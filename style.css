@@ -1,3 +1,6 @@
+body{
+  background-color: #F5F5F5;
+}
 #dir_root{
   margin-top: 5%;
   margin-bottom: 5%;
@@ -5,26 +8,105 @@
   grid-template-rows: auto;
   gap: 10px;
 }
-#item_btn{
-  font-family: "Source Code Pro", monospace;
-  color: white;
-  background: gray;
-  height: 5vh;
-  border-radius: 5px;
-  text-align: left;
+.search-bar {
+  position: relative;
 }
-.container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-#submit_btn{
-  font-family: "Source Code Pro", monospace;
-  max-width: 100px;
-  padding: 10px;
-}
-input[type=text]{
-  font-family: "Source Code Pro", monospace;
+#url-input {
   width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  background: black;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+#url-input:focus{
+  outline: none;
+}
+#submit_btn {
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
   padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-family: "Source Code Pro", monospace;
+}
+
+#submit_btn:hover {
+  background-color: darkgreen;
+}
+
+
+.download-prompt {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    background: black;
+    width: 90vw;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.file-info {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Source Code Pro", monospace;
+  }
+#video_img{
+  background: black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+}
+img,
+video,
+source {
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+}
+img {
+  height: 20vh;
+}
+.download-btn {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    font-family: "Source Code Pro", monospace;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.download-btn:hover{
+  background: green;
+  color: white;}
+
+.player {
+  --plyr-color-main: green;
+}
+
+
+
+#noPreviewImg{
+  object-fit: cover;
 }

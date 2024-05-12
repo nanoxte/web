@@ -1,79 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.plyr.io/3.7.8/plyr.css" rel="stylesheet" />
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap'); 
-.download-prompt {
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    max-width: 500px;
-    margin: auto;
-    background: black;
-    width: 70vw;
-    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
-}
-.file-info {
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    color: white;
-    text-align: left;
-    font-family: "Source Code Pro", monospace;
-  }
-#video_img{
-  color: white;
-  background: white;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  height: auto;
-  transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
-}
-img,
-video,
-source {
-  border-radius: 10px;
-  overflow: hidden;
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-  transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
-}
-img {
-  height: 20vh;
-}
-.download-btn {
-    margin-top: 10px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    display: block;
-    font-size: 18px;
-    width: 100%;
-    font-family: "Source Code Pro", monospace;
-    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
-}
-.download-btn:hover{
-  background: green;
-  color: white;}
 </style>
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.plyr.io/3.7.8/plyr.css" rel="stylesheet" />
   <title></title>
 </head>
 <body>
 <form method="post">
-<div class="container">
-    <input value="https://teraboxapp.com/s/1RPw9dGFnsuMNyJdO7C-AaQ" type="text" id="url-input" name="url_input" placeholder="Enter Url">
-    <button id="submit_btn" type="button">Generate</button>
+<div class="search-bar">
+  <input type="text" id="url-input" placeholder="Enter url Here">
+  <button id="submit_btn" type="button">Check</button>
 </div>
 </form>
 <div id="dir_root"></div>
