@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap'); 
-</style>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.plyr.io/3.7.8/plyr.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
-<title></title>
-</head>
-<body>
-<div id="loading_bg">
-<lottie-player src="loading.json" background="transparent" speed="1" loop autoplay></lottie-player>
-</div>
-<form method="post">
-<div class="search-bar">
-  <input type="text" id="url-input" placeholder="Enter url Here">
-  <button id="submit_btn" type="button">Check</button>
-</div>
-</form>
-<div id="dir_root"></div>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-<script src="script.js"></script>
-  </script>
-<script>
-function myFunction() {
-   window.open('https://t.me/+qdLjzK5bWoViOWQ1');
-}
-</script>
-<script>
- alert('Join Telegram for more @seeutv');
-</script>
-</body>
 </html>
+
+<script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+
+<div id="jwplayerDiv"></div>
+<script>  
+jwplayer("jwplayerDiv").setup({ 
+           "autostart": true,
+            "preload": "none",
+            "repeat": true,
+            "Volume": "100",
+            "mute": false,
+            "stretching": "full",
+            "width": "100%",
+            "setPip": true,
+        file: "https://livestream.sunnxt.com/6ae70edd4c1440379f5311e8fbddc7c1/KTVB_IN_index.mpd",
+      type: "dash",
+      drm: { "clearkey": {
+              "keyId": "426117d115b04497b0b0d425e8095184",
+              "key": "aa751ae8a41ac6f87141734163ffe3b2"
+            }
+             }
+});
+</script>
